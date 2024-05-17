@@ -47,15 +47,6 @@ void SetVenueHook(int *thisMetaPerformer, Symbol venue)
     SetVenue(thisMetaPerformer, venue);
 }
 
-void UpdatePresenceHook(void *thisPresenceMgr)
-{
-    // when the game updates presence, fire off the current screen name to the events socket
-    BandUI *bandUI = (BandUI *)PORT_THEBANDUI;
-    if (bandUI->currentScreen != NULL && bandUI->currentScreen->screen_name.sym != NULL)
-        RB2E_SendEvent(RB2E_EVENT_SCREEN_NAME, bandUI->currentScreen->screen_name.sym, strlen(bandUI->currentScreen->screen_name.sym));
-    UpdatePresence(thisPresenceMgr);
-}
-
 // New file hook, for ARKless file loading
 void *NewFileHook(char *fileName, int flags)
 {
@@ -359,7 +350,6 @@ void ApplyHooks()
     HookFunction(PORT_RNDPROPANIMSETFRAME, &PropAnimSetFrame, &PropAnimSetFrameHook);
     HookFunction(PORT_SYMBOLPREINIT, &SymbolPreInit, &SymbolPreInitHook);
     HookFunction(PORT_INITSONGMETADATA, &InitSongMetadata, &InitSongMetadataHook);
-    HookFunction(PORT_UPDATEPRESENCE, &UpdatePresence, &UpdatePresenceHook);
 
 #ifdef RB2E_WII // wii exclusive hooks
     // HookFunction(PORT_USBWIIGETTYPE, &UsbWiiGetType, &UsbWiiGetTypeHook);

@@ -1,0 +1,696 @@
+
+Discarded input sections
+
+ .text          0x00000000        0x0 build_wii/output.elf
+ .text.DataFindArray
+                0x00000000        0x8 build_wii/output.elf
+ .text.DataFindData
+                0x00000000        0x8 build_wii/output.elf
+ .text.MemPrintOverview
+                0x00000000        0x8 build_wii/output.elf
+ .text.MemPrint
+                0x00000000        0x8 build_wii/output.elf
+ .text.MemNumHeaps
+                0x00000000        0x8 build_wii/output.elf
+ .text.UsbWiiGetType
+                0x00000000        0x8 build_wii/output.elf
+ .text.StagekitSetState
+                0x00000000        0x8 build_wii/output.elf
+ .text.SetSongNameFromNode
+                0x00000000        0x8 build_wii/output.elf
+ .text.SongSortByRecent
+                0x00000000        0x8 build_wii/output.elf
+ .text.JoypadGetCachedXInputCaps
+                0x00000000        0x8 build_wii/output.elf
+ .text.QueuingSocketBind
+                0x00000000        0x8 build_wii/output.elf
+ .text.OperatorEqualsFmt
+                0x00000000        0x8 build_wii/output.elf
+ .text.UpdatePresence
+                0x00000000        0x8 build_wii/output.elf
+ .text.StepSequenceJobSetStep
+                0x00000000        0x8 build_wii/output.elf
+ .text.crc32_for_byte
+                0x00000000       0x50 build_wii/output.elf
+ .text.crc32    0x00000000       0xb8 build_wii/output.elf
+ .text.LoadObj  0x00000000      0x1dc build_wii/output.elf
+ .text.VertexReadHook
+                0x00000000        0x4 build_wii/output.elf
+ .text.CheckForPanelAndJump
+                0x00000000       0xa0 build_wii/output.elf
+ .text.MusicLibrarySelectHeading
+                0x00000000       0x98 build_wii/output.elf
+ .text.MusicLibrarySelectSubHeading
+                0x00000000       0x98 build_wii/output.elf
+ .text.MusicLibrarySelectSong
+                0x00000000       0x98 build_wii/output.elf
+ .text.NATPMP_RequestExternalIP
+                0x00000000       0x44 build_wii/output.elf
+ .text.NATPMP_RequestOpenPort
+                0x00000000       0x58 build_wii/output.elf
+ .text.AddInstrumentToList
+                0x00000000       0x3c build_wii/output.elf
+ .text.DisplayMessage
+                0x00000000       0x54 build_wii/output.elf
+ .text.OperatorEqualsFmtHook
+                0x00000000        0x4 build_wii/output.elf
+ .text.StepSequenceJobSetStepHook
+                0x00000000        0x4 build_wii/output.elf
+ .text.DebugTextStreamDestructor
+                0x00000000        0x4 build_wii/output.elf
+ .text.DebugTextStreamPrint
+                0x00000000        0x4 build_wii/output.elf
+ .text.ApplyPatches
+                0x00000000       0xac build_wii/output.elf
+ .text.ApplyConfigurablePatches
+                0x00000000       0x50 build_wii/output.elf
+ .text.UnhookFunction
+                0x00000000        0xc build_wii/output.elf
+ .text.RB2E_CreateThread
+                0x00000000       0x84 build_wii/output.elf
+ .text.RB2E_FileExists
+                0x00000000       0x58 build_wii/output.elf
+ .text.RB2E_FileSize
+                0x00000000       0x48 build_wii/output.elf
+ .text.RB2E_SetRecvTimeout
+                0x00000000        0x8 build_wii/output.elf
+ .text.RB2E_SetSendTimeout
+                0x00000000        0x8 build_wii/output.elf
+ .text.RB2E_SetTimeout
+                0x00000000        0x8 build_wii/output.elf
+ .text.RB2E_TCP_Connect
+                0x00000000       0x38 build_wii/output.elf
+ .text.RB2E_TCP_Send
+                0x00000000       0x20 build_wii/output.elf
+ .text.RB2E_TCP_Recv
+                0x00000000       0x20 build_wii/output.elf
+ .eh_frame      0x00000000     0x183c build_wii/output.elf
+ .rodata.LoadObj.str1.4
+                0x00000000        0x2 build_wii/output.elf
+ .rodata.CheckForPanelAndJump.str1.4
+                0x00000000       0x12 build_wii/output.elf
+ .data          0x00000000        0x0 build_wii/output.elf
+ .data.DebugTextStream
+                0x00000000        0x4 build_wii/output.elf
+ .data.DebugTextStream_vt
+                0x00000000        0x8 build_wii/output.elf
+ .data.thread_stack_ptr
+                0x00000000        0x4 build_wii/output.elf
+ .bss           0x00000000        0x0 build_wii/output.elf
+ .bss.table.0   0x00000000      0x400 build_wii/output.elf
+ .bss.messageNode
+                0x00000000        0x8 build_wii/output.elf
+ .bss.messageArray
+                0x00000000       0x10 build_wii/output.elf
+ .bss.made_threads
+                0x00000000        0x4 build_wii/output.elf
+ .bss.threads   0x00000000     0x1f40 build_wii/output.elf
+ .bss.thread_stack
+                0x00000000    0x40000 build_wii/output.elf
+ .bss.fs.0      0x00000000       0x58 build_wii/output.elf
+ .comment       0x00000000      0x414 build_wii/output.elf
+ .gnu.attributes
+                0x00000000       0x12 build_wii/output.elf
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+LOAD build_wii/output.elf
+
+.bslug.meta     0x00000000       0x72
+ *(.bslug.meta*)
+ .bslug.meta    0x00000000       0x72 build_wii/output.elf
+                0x00000000                bslug_meta
+                0x00000000                bslug_meta_license
+                0x00000010                bslug_meta_author
+                0x00000030                bslug_meta_version
+                0x00000048                bslug_meta_bslug
+                0x00000054                bslug_meta_name
+                0x00000068                bslug_meta_game
+
+.bslug.load     0x00000074       0x30
+ *(.bslug.load*)
+ .bslug.load    0x00000074       0x30 build_wii/output.elf
+                0x00000074                bslug_load
+                0x00000074                bslug_export_RB2E_Launcher_Config
+                0x00000080                bslug_export_RB2E_Launcher_HasConfig
+                0x0000008c                bslug_load__start
+                0x00000098                bslug_load_AppConstructor
+
+.text           0x000000a4     0x4e68
+ *(.text*)
+ .text.ExecuteDTA
+                0x000000a4        0x8 build_wii/output.elf
+                0x000000a4                ExecuteDTA
+ .text.SymbolConstruct
+                0x000000ac        0x8 build_wii/output.elf
+                0x000000ac                SymbolConstruct
+ .text.ModifierActive
+                0x000000b4        0x8 build_wii/output.elf
+                0x000000b4                ModifierActive
+ .text.HmxFactoryFuncAt
+                0x000000bc        0x8 build_wii/output.elf
+                0x000000bc                HmxFactoryFuncAt
+ .text.BandLabelSetDisplayText
+                0x000000c4        0x8 build_wii/output.elf
+                0x000000c4                BandLabelSetDisplayText
+ .text.RandomInt
+                0x000000cc        0x8 build_wii/output.elf
+                0x000000cc                RandomInt
+ .text.DataNodeEvaluate
+                0x000000d4        0x8 build_wii/output.elf
+                0x000000d4                DataNodeEvaluate
+ .text.FileExists
+                0x000000dc        0x8 build_wii/output.elf
+                0x000000dc                FileExists
+ .text.QueueMessage
+                0x000000e4        0x8 build_wii/output.elf
+                0x000000e4                QueueMessage
+ .text.GetMetadata
+                0x000000ec        0x8 build_wii/output.elf
+                0x000000ec                GetMetadata
+ .text.GetSongIDFromShortname
+                0x000000f4        0x8 build_wii/output.elf
+                0x000000f4                GetSongIDFromShortname
+ .text.GetSongShortname
+                0x000000fc        0x8 build_wii/output.elf
+                0x000000fc                GetSongShortname
+ .text.GetBandUsers
+                0x00000104        0x8 build_wii/output.elf
+                0x00000104                GetBandUsers
+ .text.GetBandUserFromSlot
+                0x0000010c        0x8 build_wii/output.elf
+                0x0000010c                GetBandUserFromSlot
+ .text.ChunkStreamConstructor
+                0x00000114        0x8 build_wii/output.elf
+                0x00000114                ChunkStreamConstructor
+ .text.FileStreamConstructor
+                0x0000011c        0x8 build_wii/output.elf
+                0x0000011c                FileStreamConstructor
+ .text.Dynamic_Cast
+                0x00000124        0x8 build_wii/output.elf
+                0x00000124                Dynamic_Cast
+ .text.GameGetActivePlayer
+                0x0000012c        0x8 build_wii/output.elf
+                0x0000012c                GameGetActivePlayer
+ .text.PropAnimSetFrame
+                0x00000134        0x8 build_wii/output.elf
+                0x00000134                PropAnimSetFrame
+ .text.ObjectFindUIPanel
+                0x0000013c        0x8 build_wii/output.elf
+                0x0000013c                ObjectFindUIPanel
+ .text.JoypadGetPadData
+                0x00000144        0x8 build_wii/output.elf
+                0x00000144                JoypadGetPadData
+ .text.SongMgrGetRankedSongs
+                0x0000014c        0x8 build_wii/output.elf
+                0x0000014c                SongMgrGetRankedSongs
+ .text.InitSongMetadata
+                0x00000154        0x8 build_wii/output.elf
+                0x00000154                InitSongMetadata
+ .text.MemAlloc
+                0x0000015c        0x8 build_wii/output.elf
+                0x0000015c                MemAlloc
+ .text.MemFree  0x00000164        0x8 build_wii/output.elf
+                0x00000164                MemFree
+ .text.Localize
+                0x0000016c        0x8 build_wii/output.elf
+                0x0000016c                Localize
+ .text.SetVenue
+                0x00000174        0x8 build_wii/output.elf
+                0x00000174                SetVenue
+ .text.ModifierManagerConstructor
+                0x0000017c        0x8 build_wii/output.elf
+                0x0000017c                ModifierManagerConstructor
+ .text.NewFile  0x00000184        0x8 build_wii/output.elf
+                0x00000184                NewFile
+ .text.WillBeNoStrum
+                0x0000018c        0x8 build_wii/output.elf
+                0x0000018c                WillBeNoStrum
+ .text.AddGameGem
+                0x00000194        0x8 build_wii/output.elf
+                0x00000194                AddGameGem
+ .text.SetSongAndArtistName
+                0x0000019c        0x8 build_wii/output.elf
+                0x0000019c                SetSongAndArtistName
+ .text.SetMusicSpeed
+                0x000001a4        0x8 build_wii/output.elf
+                0x000001a4                SetMusicSpeed
+ .text.UpdateTrackSpeed
+                0x000001ac        0x8 build_wii/output.elf
+                0x000001ac                UpdateTrackSpeed
+ .text.SetAddress
+                0x000001b4        0x8 build_wii/output.elf
+                0x000001b4                SetAddress
+ .text.GetWidgetByName
+                0x000001bc        0x8 build_wii/output.elf
+                0x000001bc                GetWidgetByName
+ .text.GetSlotColor
+                0x000001c4        0x8 build_wii/output.elf
+                0x000001c4                GetSlotColor
+ .text.StartDNSLookup
+                0x000001cc        0x8 build_wii/output.elf
+                0x000001cc                StartDNSLookup
+ .text.SetSystemLanguage
+                0x000001d4        0x8 build_wii/output.elf
+                0x000001d4                SetSystemLanguage
+ .text.DataReadFile
+                0x000001dc        0x8 build_wii/output.elf
+                0x000001dc                DataReadFile
+ .text.GameConstruct
+                0x000001e4        0x8 build_wii/output.elf
+                0x000001e4                GameConstruct
+ .text.GameDestruct
+                0x000001ec        0x8 build_wii/output.elf
+                0x000001ec                GameDestruct
+ .text.PrepareSomeVectorMaybe
+                0x000001f4        0x8 build_wii/output.elf
+                0x000001f4                PrepareSomeVectorMaybe
+ .text.SomeVectorPushBackMaybe
+                0x000001fc        0x8 build_wii/output.elf
+                0x000001fc                SomeVectorPushBackMaybe
+ .text.MusicLibrarySelect
+                0x00000204        0x8 build_wii/output.elf
+                0x00000204                MusicLibrarySelect
+ .text.GetSymbolByGameOrigin
+                0x0000020c        0x8 build_wii/output.elf
+                0x0000020c                GetSymbolByGameOrigin
+ .text.GetGameOriginBySymbol
+                0x00000214        0x8 build_wii/output.elf
+                0x00000214                GetGameOriginBySymbol
+ .text.SymbolPreInit
+                0x0000021c        0x8 build_wii/output.elf
+                0x0000021c                SymbolPreInit
+ .text.BinstreamWrite
+                0x00000224        0x8 build_wii/output.elf
+                0x00000224                BinstreamWrite
+ .text.BinstreamRead
+                0x0000022c        0x8 build_wii/output.elf
+                0x0000022c                BinstreamRead
+ .text.BinstreamReadEndian
+                0x00000234        0x8 build_wii/output.elf
+                0x00000234                BinstreamReadEndian
+ .text.BinstreamWriteEndian
+                0x0000023c        0x8 build_wii/output.elf
+                0x0000023c                BinstreamWriteEndian
+ .text.INIHandler
+                0x00000244      0xaf0 build_wii/output.elf
+ .text.InitDefaultConfig
+                0x00000d34       0x64 build_wii/output.elf
+                0x00000d34                InitDefaultConfig
+ .text.HasLauncherConfig
+                0x00000d98       0x20 build_wii/output.elf
+                0x00000d98                HasLauncherConfig
+ .text.LoadConfig
+                0x00000db8      0x1b4 build_wii/output.elf
+                0x00000db8                LoadConfig
+ .text.GetMusicSpeed
+                0x00000f6c       0x18 build_wii/output.elf
+                0x00000f6c                GetMusicSpeed
+ .text.GetTrackSpeed
+                0x00000f84       0x18 build_wii/output.elf
+                0x00000f84                GetTrackSpeed
+ .text.DTAGetSongCount
+                0x00000f9c       0x18 build_wii/output.elf
+                0x00000f9c                DTAGetSongCount
+ .text.PrintToDebugger
+                0x00000fb4      0x130 build_wii/output.elf
+                0x00000fb4                PrintToDebugger
+ .text.ChangeMusicSpeed
+                0x000010e4      0x108 build_wii/output.elf
+                0x000010e4                ChangeMusicSpeed
+ .text.ChangeTrackSpeed
+                0x000011ec      0x108 build_wii/output.elf
+                0x000011ec                ChangeTrackSpeed
+ .text.DTASetVenue
+                0x000012f4       0xe4 build_wii/output.elf
+                0x000012f4                DTASetVenue
+ .text.DTAIsEmulator
+                0x000013d8       0x3c build_wii/output.elf
+                0x000013d8                DTAIsEmulator
+ .text.DTARelaunchGame
+                0x00001414       0x3c build_wii/output.elf
+                0x00001414                DTARelaunchGame
+ .text.DTASendModData
+                0x00001450      0x16c build_wii/output.elf
+                0x00001450                DTASendModData
+ .text.AddDTAFunctions
+                0x000015bc      0x164 build_wii/output.elf
+                0x000015bc                AddDTAFunctions
+ .text.GameConstructHook
+                0x00001720      0x148 build_wii/output.elf
+                0x00001720                GameConstructHook
+ .text.GameDestructHook
+                0x00001868       0x58 build_wii/output.elf
+                0x00001868                GameDestructHook
+ .text.WillBeNoStrumHook
+                0x000018c0       0x88 build_wii/output.elf
+                0x000018c0                WillBeNoStrumHook
+ .text.GetWidgetByNameHook
+                0x00001948      0x2d0 build_wii/output.elf
+                0x00001948                GetWidgetByNameHook
+ .text.GetSlotColorHook
+                0x00001c18      0x150 build_wii/output.elf
+                0x00001c18                GetSlotColorHook
+ .text.shuffleColors
+                0x00001d68       0xfc build_wii/output.elf
+                0x00001d68                shuffleColors
+ .text.AddGameGemHook
+                0x00001e64      0x168 build_wii/output.elf
+                0x00001e64                AddGameGemHook
+ .text.InitGlobalSymbols
+                0x00001fcc      0x388 build_wii/output.elf
+                0x00001fcc                InitGlobalSymbols
+ .text.StartDNSLookupHook
+                0x00002354       0x6c build_wii/output.elf
+                0x00002354                StartDNSLookupHook
+ .text.SetAddressHook
+                0x000023c0       0xb4 build_wii/output.elf
+                0x000023c0                SetAddressHook
+ .text.ini_reader_string
+                0x00002474       0x74 build_wii/output.elf
+ .text.find_chars_or_comment
+                0x000024e8       0xd8 build_wii/output.elf
+ .text.ini_parse_stream
+                0x000025c0      0x428 build_wii/output.elf
+                0x000025c0                ini_parse_stream
+ .text.ini_parse_string
+                0x000029e8       0x5c build_wii/output.elf
+                0x000029e8                ini_parse_string
+ .text.SetSystemLanguageHook
+                0x00002a44       0xb4 build_wii/output.elf
+                0x00002a44                SetSystemLanguageHook
+ .text.IsSupportedLanguageHook
+                0x00002af8        0x8 build_wii/output.elf
+                0x00002af8                IsSupportedLanguageHook
+ .text.LocalizeHook
+                0x00002b00      0x1a8 build_wii/output.elf
+                0x00002b00                LocalizeHook
+ .text.RB2E_SendEvent.part.0
+                0x00002ca8       0xa4 build_wii/output.elf
+ .text.RB2E_InitEvents
+                0x00002d4c      0x180 build_wii/output.elf
+                0x00002d4c                RB2E_InitEvents
+ .text.RB2E_SendEvent
+                0x00002ecc       0x88 build_wii/output.elf
+                0x00002ecc                RB2E_SendEvent
+ .text.PCP_RequestOpenPort
+                0x00002f54       0xec build_wii/output.elf
+                0x00002f54                PCP_RequestOpenPort
+ .text.NATPMP_Init
+                0x00003040       0x98 build_wii/output.elf
+                0x00003040                NATPMP_Init
+ .text.NATPMP_Poll
+                0x000030d8      0x454 build_wii/output.elf
+                0x000030d8                NATPMP_Poll
+ .text.BuildInstrumentSelectionList
+                0x0000352c      0x374 build_wii/output.elf
+                0x0000352c                BuildInstrumentSelectionList
+ .text.DefinesHook
+                0x000038a0       0x78 build_wii/output.elf
+                0x000038a0                DefinesHook
+ .text.SetVenueHook
+                0x00003918       0xd0 build_wii/output.elf
+                0x00003918                SetVenueHook
+ .text.NewFileHook
+                0x000039e8      0x108 build_wii/output.elf
+                0x000039e8                NewFileHook
+ .text.DataReadFileHook
+                0x00003af0        0x4 build_wii/output.elf
+                0x00003af0                DataReadFileHook
+ .text.ModifierManagerConstructorHook
+                0x00003af4       0xb0 build_wii/output.elf
+                0x00003af4                ModifierManagerConstructorHook
+ .text.RB2E_RunLoop
+                0x00003ba4       0x54 build_wii/output.elf
+                0x00003ba4                RB2E_RunLoop
+ .text.SymbolPreInitHook
+                0x00003bf8       0x20 build_wii/output.elf
+                0x00003bf8                SymbolPreInitHook
+ .text.InitialiseFunctions
+                0x00003c18      0x424 build_wii/output.elf
+                0x00003c18                InitialiseFunctions
+ .text.ApplyHooks
+                0x0000403c      0x350 build_wii/output.elf
+                0x0000403c                ApplyHooks
+ .text.StartupHook
+                0x0000438c      0x194 build_wii/output.elf
+                0x0000438c                StartupHook
+ .text.PropAnimSetFrameHook
+                0x00004520       0xa4 build_wii/output.elf
+                0x00004520                PropAnimSetFrameHook
+ .text.GetSymbolByGameOriginHook
+                0x000045c4       0x28 build_wii/output.elf
+                0x000045c4                GetSymbolByGameOriginHook
+ .text.GetGameOriginBySymbolHook
+                0x000045ec      0x1d4 build_wii/output.elf
+                0x000045ec                GetGameOriginBySymbolHook
+ .text.SetMusicSpeedHook
+                0x000047c0       0x1c build_wii/output.elf
+                0x000047c0                SetMusicSpeedHook
+ .text.UpdateTrackSpeedHook
+                0x000047dc       0x10 build_wii/output.elf
+                0x000047dc                UpdateTrackSpeedHook
+ .text.HookFunction
+                0x000047ec       0x2c build_wii/output.elf
+                0x000047ec                HookFunction
+ .text.CTHook   0x00004818      0x160 build_wii/output.elf
+ .text._startHook
+                0x00004978       0x48 build_wii/output.elf
+ .text.RB2E_IsEmulator
+                0x000049c0       0x64 build_wii/output.elf
+                0x000049c0                RB2E_IsEmulator
+ .text.RB2E_RelaunchGame
+                0x00004a24        0x8 build_wii/output.elf
+                0x00004a24                RB2E_RelaunchGame
+ .text.RB2E_MountFileSystems
+                0x00004a2c       0x50 build_wii/output.elf
+                0x00004a2c                RB2E_MountFileSystems
+ .text.RB2E_GetRawfilePath
+                0x00004a7c      0x1d0 build_wii/output.elf
+                0x00004a7c                RB2E_GetRawfilePath
+ .text.RB2E_OpenFile
+                0x00004c4c       0x1c build_wii/output.elf
+                0x00004c4c                RB2E_OpenFile
+ .text.RB2E_ReadFile
+                0x00004c68       0x54 build_wii/output.elf
+                0x00004c68                RB2E_ReadFile
+ .text.RB2E_CloseFile
+                0x00004cbc        0x4 build_wii/output.elf
+                0x00004cbc                RB2E_CloseFile
+ .text.RB2E_CreateSocket
+                0x00004cc0       0x58 build_wii/output.elf
+                0x00004cc0                RB2E_CreateSocket
+ .text.RB2E_DisposeSocket
+                0x00004d18        0x4 build_wii/output.elf
+                0x00004d18                RB2E_DisposeSocket
+ .text.RB2E_LastError
+                0x00004d1c       0x24 build_wii/output.elf
+                0x00004d1c                RB2E_LastError
+ .text.RB2E_GetInternalIP
+                0x00004d40        0x4 build_wii/output.elf
+                0x00004d40                RB2E_GetInternalIP
+ .text.RB2E_GetGatewayIP
+                0x00004d44       0x28 build_wii/output.elf
+                0x00004d44                RB2E_GetGatewayIP
+ .text.RB2E_BindPort
+                0x00004d6c       0x3c build_wii/output.elf
+                0x00004d6c                RB2E_BindPort
+ .text.RB2E_SetNonBlocking
+                0x00004da8       0x60 build_wii/output.elf
+                0x00004da8                RB2E_SetNonBlocking
+ .text.RB2E_UDP_SendTo
+                0x00004e08       0x54 build_wii/output.elf
+                0x00004e08                RB2E_UDP_SendTo
+ .text.RB2E_UDP_RecvFrom
+                0x00004e5c       0xb0 build_wii/output.elf
+                0x00004e5c                RB2E_UDP_RecvFrom
+
+.data           0x00004f0c       0x14
+ *(.data*)
+ .data.EventsPort
+                0x00004f0c        0x2 build_wii/output.elf
+ *fill*         0x00004f0e        0x2 
+ .data.EventsIP
+                0x00004f10        0x4 build_wii/output.elf
+ .data.RB2E_EventsSocket
+                0x00004f14        0x4 build_wii/output.elf
+                0x00004f14                RB2E_EventsSocket
+ .data.time_until_expiry
+                0x00004f18        0x4 build_wii/output.elf
+ .data.natpmp_socket
+                0x00004f1c        0x4 build_wii/output.elf
+
+.rodata         0x00004f20      0xf7f
+ *(.rodata*)
+ .rodata.INIHandler.str1.4
+                0x00004f20      0x1ce build_wii/output.elf
+ *fill*         0x000050ee        0x2 
+ .rodata.InitDefaultConfig.str1.4
+                0x000050f0        0x4 build_wii/output.elf
+ .rodata.LoadConfig.str1.4
+                0x000050f4      0x134 build_wii/output.elf
+ .rodata.str1.4
+                0x00005228      0x137 build_wii/output.elf
+ *fill*         0x0000535f        0x1 
+ .rodata.cst4   0x00005360       0x20 build_wii/output.elf
+ .rodata.PrintToDebugger.str1.4
+                0x00005380       0x70 build_wii/output.elf
+ .rodata.ChangeMusicSpeed.str1.4
+                0x000053f0       0x38 build_wii/output.elf
+ .rodata.ChangeTrackSpeed.str1.4
+                0x00005428       0x38 build_wii/output.elf
+ .rodata.DTASetVenue.str1.4
+                0x00005460       0x6b build_wii/output.elf
+ *fill*         0x000054cb        0x1 
+ .rodata.DTASendModData.str1.4
+                0x000054cc       0xd9 build_wii/output.elf
+ *fill*         0x000055a5        0x3 
+ .rodata.AddDTAFunctions.str1.4
+                0x000055a8       0x21 build_wii/output.elf
+ *fill*         0x000055c9        0x3 
+ .rodata.GetSlotColorHook.str1.4
+                0x000055cc       0x23 build_wii/output.elf
+ *fill*         0x000055ef        0x1 
+ .rodata        0x000055f0       0x5c build_wii/output.elf
+ .rodata.InitGlobalSymbols.str1.4
+                0x0000564c      0x360 build_wii/output.elf
+ .rodata.StartDNSLookupHook.str1.4
+                0x000059ac       0x11 build_wii/output.elf
+ *fill*         0x000059bd        0x3 
+ .rodata.SetAddressHook.str1.4
+                0x000059c0       0x1f build_wii/output.elf
+ *fill*         0x000059df        0x1 
+ .rodata.find_chars_or_comment.str1.4
+                0x000059e0        0x2 build_wii/output.elf
+ *fill*         0x000059e2        0x2 
+ .rodata.ini_parse_stream.str1.4
+                0x000059e4        0xb build_wii/output.elf
+ *fill*         0x000059ef        0x1 
+ .rodata.LocalizeHook.str1.4
+                0x000059f0       0xc2 build_wii/output.elf
+ *fill*         0x00005ab2        0x2 
+ .rodata.newLocales
+                0x00005ab4       0x28 build_wii/output.elf
+ .rodata.RB2E_InitEvents.str1.4
+                0x00005adc        0xe build_wii/output.elf
+ *fill*         0x00005aea        0x2 
+ .rodata.BuildInstrumentSelectionList
+                0x00005aec       0x14 build_wii/output.elf
+ .rodata.DefinesHook.str1.4
+                0x00005b00       0x16 build_wii/output.elf
+ *fill*         0x00005b16        0x2 
+ .rodata.SetVenueHook.str1.4
+                0x00005b18       0x3e build_wii/output.elf
+ *fill*         0x00005b56        0x2 
+ .rodata.NewFileHook.str1.4
+                0x00005b58       0x22 build_wii/output.elf
+ *fill*         0x00005b7a        0x2 
+ .rodata.ModifierManagerConstructorHook.str1.4
+                0x00005b7c      0x191 build_wii/output.elf
+ *fill*         0x00005d0d        0x3 
+ .rodata.ApplyPatches.str1.4
+                0x00005d10       0x1d build_wii/output.elf
+ *fill*         0x00005d2d        0x3 
+ .rodata.InitialiseFunctions.str1.4
+                0x00005d30       0x23 build_wii/output.elf
+ *fill*         0x00005d53        0x1 
+ .rodata.ApplyHooks.str1.4
+                0x00005d54       0x1b build_wii/output.elf
+ *fill*         0x00005d6f        0x1 
+ .rodata.StartupHook.str1.4
+                0x00005d70       0x64 build_wii/output.elf
+ .rodata.PropAnimSetFrameHook.str1.4
+                0x00005dd4       0x14 build_wii/output.elf
+ .rodata.GetGameOriginBySymbolHook.str1.4
+                0x00005de8       0x37 build_wii/output.elf
+ *fill*         0x00005e1f        0x1 
+ .rodata.defaultOrigins
+                0x00005e20       0x24 build_wii/output.elf
+ .rodata.CTHook.str1.4
+                0x00005e44       0x28 build_wii/output.elf
+ .rodata.RB2E_IsEmulator.str1.4
+                0x00005e6c        0xd build_wii/output.elf
+ *fill*         0x00005e79        0x3 
+ .rodata.RB2E_GetRawfilePath.str1.4
+                0x00005e7c       0x23 build_wii/output.elf
+
+.bss            0x00005ea0     0x1e68
+ *(.bss*)
+ .bss.RB2E_Launcher_Config
+                0x00005ea0     0x1000 build_wii/output.elf
+                0x00005ea0                RB2E_Launcher_Config
+ .bss.RB2E_Launcher_HasConfig
+                0x00006ea0        0x4 build_wii/output.elf
+                0x00006ea0                RB2E_Launcher_HasConfig
+ .bss.config    0x00006ea4      0x1e4 build_wii/output.elf
+                0x00006ea4                config
+ .bss.globalSymbolsInitialised
+                0x00007088        0x1 build_wii/output.elf
+ *fill*         0x00007089        0x3 
+ .bss.globalSymbols
+                0x0000708c       0xc0 build_wii/output.elf
+                0x0000708c                globalSymbols
+ .bss.mod_locale_string
+                0x0000714c       0x80 build_wii/output.elf
+ .bss.RB2E_ActiveLocale
+                0x000071cc        0x4 build_wii/output.elf
+                0x000071cc                RB2E_ActiveLocale
+ .bss.InitFailed
+                0x000071d0        0x4 build_wii/output.elf
+ .bss.init_packet_ticker
+                0x000071d4        0x4 build_wii/output.elf
+ .bss.sending_init_packet
+                0x000071d8        0x1 build_wii/output.elf
+ .bss.has_tried_init
+                0x000071d9        0x1 build_wii/output.elf
+ *fill*         0x000071da        0x2 
+ .bss.mapping_nonce
+                0x000071dc        0xc build_wii/output.elf
+ .bss.gateway_ipv4
+                0x000071e8        0x4 build_wii/output.elf
+ .bss.ticker    0x000071ec        0x4 build_wii/output.elf
+ .bss.expected_server_epoch
+                0x000071f0        0x4 build_wii/output.elf
+ .bss.failed_natpmp
+                0x000071f4        0x1 build_wii/output.elf
+ .bss.failed_pcp
+                0x000071f5        0x1 build_wii/output.elf
+ .bss.NATPMP_ExternalPort
+                0x000071f6        0x2 build_wii/output.elf
+                0x000071f6                NATPMP_ExternalPort
+ .bss.NATPMP_ExternalIP
+                0x000071f8        0x4 build_wii/output.elf
+                0x000071f8                NATPMP_ExternalIP
+ .bss.NATPMP_Success
+                0x000071fc        0x1 build_wii/output.elf
+                0x000071fc                NATPMP_Success
+ *fill*         0x000071fd        0x3 
+ .bss.framecount
+                0x00007200        0x4 build_wii/output.elf
+ .bss.DefinesStep
+                0x00007204        0x4 build_wii/output.elf
+ .bss.newOrigins
+                0x00007208        0x4 build_wii/output.elf
+ .bss.origins   0x0000720c      0x800 build_wii/output.elf
+ .bss.DetectionResult
+                0x00007a0c        0x4 build_wii/output.elf
+ .bss.PRURL     0x00007a10       0x90 build_wii/output.elf
+                0x00007a10                PRURL
+ .bss.ACURL     0x00007aa0       0x90 build_wii/output.elf
+                0x00007aa0                ACURL
+ .bss.st.1      0x00007b30       0x50 build_wii/output.elf
+ .bss.st.2      0x00007b80       0x58 build_wii/output.elf
+ .bss.path_to_check
+                0x00007bd8      0x12c build_wii/output.elf
+ .bss.RB2E_Mounted
+                0x00007d04        0x4 build_wii/output.elf
+                0x00007d04                RB2E_Mounted
+
+/DISCARD/
+ *(*)
+OUTPUT(out/RB2Enhanced.mod elf32-powerpc)

@@ -28,7 +28,6 @@
 #include "SongSort.h"
 #include "SpeedHooks.h"
 #include "utilities.h"
-#include "wii_usbhid.h"
 #include "xbox360.h"
 
 #endif // RB2EINCLUDE_H_
