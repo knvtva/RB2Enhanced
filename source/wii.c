@@ -21,7 +21,7 @@
 #include "GlobalSymbols.h"
 #include "config.h"
 
-BSLUG_MODULE_GAME("SZB?");
+BSLUG_MODULE_GAME("SZA?");
 BSLUG_MODULE_NAME("RB2Enhanced");
 BSLUG_MODULE_VERSION(RB2E_BUILDTAG);
 BSLUG_MODULE_AUTHOR("github.com/RBEnhanced");
