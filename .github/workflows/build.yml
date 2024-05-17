@@ -32,8 +32,8 @@ jobs:
       - name: Upload binaries (debug)
         uses: actions/upload-artifact@v2
         with: 
-          name: RB3Enhanced-Wii-Debug
-          path: out/RB3Enhanced.mod
+          name: RB2Enhanced-Wii-Debug
+          path: out/RB2Enhanced.mod
 
       - name: Compile (no-debug)
         run: |
@@ -43,11 +43,11 @@ jobs:
       - name: Upload binaries (no-debug)
         uses: actions/upload-artifact@v2
         with: 
-          name: RB3Enhanced-Wii-NoDebug
-          path: out/RB3Enhanced.mod
+          name: RB2Enhanced-Wii-NoDebug
+          path: out/RB2Enhanced.mod
 
   Xbox:
-    if: github.repository == 'RBEnhanced/RB3Enhanced'
+    if: github.repository == 'RBEnhanced/RB2Enhanced'
     runs-on: windows-2019
     timeout-minutes: 10
 
@@ -74,8 +74,8 @@ jobs:
       - name: Upload binaries (debug)
         uses: actions/upload-artifact@v2
         with: 
-          name: RB3Enhanced-Xbox-Debug
-          path: out/RB3Enhanced.dll
+          name: RB2Enhanced-Xbox-Debug
+          path: out/RB2Enhanced.dll
 
       - name: Compile (no-debug)
         env:
@@ -87,5 +87,5 @@ jobs:
       - name: Upload binaries (no-debug)
         uses: actions/upload-artifact@v2
         with: 
-          name: RB3Enhanced-Xbox-NoDebug
-          path: out/RB3Enhanced.dll
+          name: RB2Enhanced-Xbox-NoDebug
+          path: out/RB2Enhanced.dll
