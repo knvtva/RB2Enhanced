@@ -23,7 +23,6 @@
 #include "QuazalHooks.h"
 #include "rb2enhanced.h"
 #include "RndPropAnimHooks.h"
-#include "SetlistHooks.h"
 #include "SongHooks.h"
 #include "SongSort.h"
 #include "SpeedHooks.h"

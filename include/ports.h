@@ -182,8 +182,8 @@ void DbgPrint(const char *s, ...);
 #define PORT_SONGBLACKLIST 0x801d2148           // call to a function that checks song blacklist
 #define PORT_DATAINITFUNCS_TAIL 0x80321b7c      // blr of DataInitFuncs
 #define PORT_FASTSTART_CHECK 0x8000e2f0         // beq after OptionBool("fast",0) in App::_ct
-#define PORT_STRAPSCREEN_1 0x8000e40c           // branch to CustomSplash::Show in App::_ct
-#define PORT_STRAPSCREEN_2 0x8000e41c           // branch to CustomSplash::EndShow in App::_ct
+#define PORT_STRAPSCREEN_1 0x8000c2d0           // branch to CustomSplash::Show in App::_ct
+#define PORT_STRAPSCREEN_2 0x8000c2d8           // branch to CustomSplash::EndShow in App::_ct
 #define PORT_NASWII_HOST 0x807e94a0             // branch to the add header function in the DWCDL login function
 #define PORT_CHARACTER_CLOTHES_CHECK 0x801fec58 // check to see if the goal required to select a piece of clothing has been unlocked
 #define PORT_FACE_PAINT_CHECK 0x801fd9a8        // check to see if face paint is unlocked

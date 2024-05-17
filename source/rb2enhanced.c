@@ -182,23 +182,17 @@ void StagekitSetStateHook(int state1, int state2)
 void ApplyPatches()
 {
     // Patch out PlatformMgr::SetDiskError - this effectively nullifies checksum checks on ARKs and MIDs.
-    POKE_32(PORT_SETDISKERROR, BLR);
+    //POKE_32(PORT_SETDISKERROR, BLR);
     // Replace max_song_count DataNode::_value call with a hardcoded response.
     POKE_32(PORT_SONGLIMIT, LI(3, 8000));
     // "Fast startup" - make the game not wait until Splash is done
     POKE_32(PORT_FASTSTART_CHECK, NOP);
-    // Replace call to song blacklist check with li r3, 0
-    POKE_32(PORT_SONGBLACKLIST, LI(3, 0));
-    // Patch out the function for checking keys on guitar unlock status.
-    POKE_32(PORT_KEYSONGUITAR, BLR);
 #ifdef RB2E_WII
     // Patch out calls to CustomSplash in App::_ct
     POKE_32(PORT_STRAPSCREEN_1, NOP);
     POKE_32(PORT_STRAPSCREEN_2, NOP);
     // Patch out erroneous second host header
     POKE_32(PORT_NASWII_HOST, NOP);
-    // always take the branch to 0x8024a628 so vocals can be selected without a mic plugged in
-    POKE_32(PORT_MICCHECK, 0x42800140);
     // always fire the UpdatePresence function. TODO(Emma): look into it, still not firing when screen is changed :/
     POKE_32(PORT_UPDATEPRESENCEBLOCK_B, NOP);
 #elif RB2E_XBOX
@@ -324,46 +318,6 @@ void InitialiseFunctions()
 
 void ApplyHooks()
 {
-    POKE_B(PORT_DATAINITFUNCS_TAIL, &AddDTAFunctions);
-    POKE_B(PORT_ISSUPPORTEDLANGUAGE, &IsSupportedLanguageHook);
-    POKE_B(PORT_BUILDINSTRUMENTSELECTION, &BuildInstrumentSelectionList);
-    POKE_BL(PORT_OPTIONSTR_DEFINE, &DefinesHook);
-    POKE_BL(PORT_RUNLOOP_SPARE, &RB2E_RunLoop);
-    HookFunction(PORT_LOCALIZE, &Localize, &LocalizeHook);
-    HookFunction(PORT_WILLBENOSTRUM, &WillBeNoStrum, &WillBeNoStrumHook);
-    HookFunction(PORT_ADDGAMEGEM, &AddGameGem, &AddGameGemHook);
-    HookFunction(PORT_SETSONGANDARTISTNAME, &SetSongAndArtistName, SetSongAndArtistNameHook);
-    HookFunction(PORT_SETVENUE, &SetVenue, &SetVenueHook);
-    HookFunction(PORT_MODIFIERMGR_CT, &ModifierManagerConstructor, &ModifierManagerConstructorHook);
-    HookFunction(PORT_NEWFILE, &NewFile, &NewFileHook);
-    HookFunction(PORT_SETSONGSPEED, &SetMusicSpeed, &SetMusicSpeedHook);
-    HookFunction(PORT_SETTRACKSPEED, &UpdateTrackSpeed, &UpdateTrackSpeedHook);
-    HookFunction(PORT_SETADDRESS, &SetAddress, &SetAddressHook);
-    HookFunction(PORT_GETWIDGETBYNAME, &GetWidgetByName, &GetWidgetByNameHook);
-    HookFunction(PORT_GETSLOTCOLOR, &GetSlotColor, &GetSlotColorHook);
-    HookFunction(PORT_SETSYSTEMLANGUAGE, &SetSystemLanguage, &SetSystemLanguageHook);
-    HookFunction(PORT_DATAREADFILE, &DataReadFile, &DataReadFileHook);
-    HookFunction(PORT_GAME_CT, &GameConstruct, &GameConstructHook);
-    HookFunction(PORT_GAME_DT, &GameDestruct, &GameDestructHook);
-    HookFunction(PORT_GETSYMBOLBYGAMEORIGIN, &GetSymbolByGameOrigin, &GetSymbolByGameOriginHook);
-    HookFunction(PORT_GETGAMEORIGINBYSYMBOL, &GetGameOriginBySymbol, &GetGameOriginBySymbolHook);
-    HookFunction(PORT_RNDPROPANIMSETFRAME, &PropAnimSetFrame, &PropAnimSetFrameHook);
-    HookFunction(PORT_SYMBOLPREINIT, &SymbolPreInit, &SymbolPreInitHook);
-    HookFunction(PORT_INITSONGMETADATA, &InitSongMetadata, &InitSongMetadataHook);
-
-#ifdef RB2E_WII // wii exclusive hooks
-    // HookFunction(PORT_USBWIIGETTYPE, &UsbWiiGetType, &UsbWiiGetTypeHook);
-    HookFunction(PORT_WIINETINIT_DNSLOOKUP, &StartDNSLookup, &StartDNSLookupHook);
-#elif RB2E_XBOX // 360 exclusive hooks
-    HookFunction(PORT_STAGEKIT_SET_STATE, &StagekitSetState, &StagekitSetStateHook);
-    HookFunction(PORT_SETSONGNAMEFROMNODE, &SetSongNameFromNode, &SetSongNameFromNodeHook);
-    // TODO: port these to Wii
-    POKE_B(PORT_GETSONGID, &GetSongIDHook);
-    POKE_BL(PORT_SONG_ID_EVALUATE, &MetadataSongIDHook);
-    POKE_BL(PORT_LOADOBJS_BCTRL, &LoadObj);
-    POKE_BL(PORT_VERTEX_READ_1, &VertexReadHook);
-    POKE_BL(PORT_VERTEX_READ_2, &VertexReadHook);
-#endif
     RB2E_MSG("Hooks applied!", NULL);
 }
 
@@ -371,7 +325,7 @@ void StartupHook(void *ThisApp, int argc, char **argv)
 {
     RB2E_MSG("Loaded! Version " RB2E_BUILDTAG " (" RB2E_BUILDCOMMIT ")", NULL);
     // apply code patches and hooks
-    InitialiseFunctions();
+    //InitialiseFunctions();
     ApplyPatches();
     ApplyHooks();
     // initialise the default config state
@@ -386,7 +340,7 @@ void StartupHook(void *ThisApp, int argc, char **argv)
     ApplyConfigurablePatches();
 
     // start the game by calling the proper app constructor
-    RB2E_MSG("Starting Rock Band 3...", NULL);
+    RB2E_MSG("Starting Rock Band 2...", NULL);
     AppConstructor(ThisApp, argc, argv);
     // anything after here is post-splash
     return;
