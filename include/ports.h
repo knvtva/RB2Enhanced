@@ -198,17 +198,16 @@ void DbgPrint(const char *s, ...);
 // function patch addresses
 #define PORT_SETDISKERROR 0x8030ce7c             // PlatformMgr::SetDiskError
 #define PORT_NEWFILE 0x802f9ed0                  // NewFile
-#define PORT_SETTRACKSPEED 0x80441ee0            // TrackPanelDirBase::UpdateTrackSpeed
-#define PORT_SETSONGSPEED 0x801130d0             // Game::SetMusicSpeed
+#define PORT_SETTRACKSPEED 0x80328248            // TrackPanelDirBase::UpdateTrackSpeed
+#define PORT_SETSONGSPEED 0x80041940             // Game::SetMusicSpeed
 #define PORT_MODIFIERMGR_CT 0x8022c1b4           // ModifierManager::__ct
 #define PORT_MODIFIERMGR_ACTIVE 0x8022c830       // ModifierManager::ModifierActive
 #define PORT_SYMBOL_CT 0x80363f60                // Symbol::Symbol
 #define PORT_LOCALIZE 0x803506f4                 // Locale::Localize
 #define PORT_SETVENUE 0x802282dc                 // MetaPerformer::SetVenue(?) (actual func name is not known)
-#define PORT_EXECUTEDTA 0x802cf7e0               // RockCentralGateway::ExecuteConfig
+#define PORT_EXECUTEDTA 0x801d5f54               // RockCentralGateway::ExecuteConfig
 #define PORT_BANDLABELSETDISPLAYTEXT 0x803b1858  // BandLabel::SetDisplayText
 #define PORT_SETSONGANDARTISTNAME 0x801b68a8     // BandLabel::SetSongAndArtistName
-#define PORT_KEYSONGUITAR 0x80242ab4             // function that checks "key_keys_on_guitar"
 #define PORT_HMXFACTORYFUNCAT 0x8031b2f8         // HmxObjectFactoryFunc::_at
 #define PORT_WILLBENOSTRUM 0x80463010            // GameGemList::WillBeNoStrum
 #define PORT_ADDGAMEGEM 0x80463198               // GameGemList::AddGameGem
