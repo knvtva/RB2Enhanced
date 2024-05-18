@@ -6,3 +6,7 @@ out/RB2Enhanced.mod
 build_wii/output.elf
 build_wii/RB2Enhanced.map
 source/version.h
+source/version.h
+out/RB2Enhanced.mod
+build_wii/RB2Enhanced.map
+build_wii/output.elf
